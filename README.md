@@ -34,7 +34,7 @@ ffmpeg -i [视频链接] -vframes 1 -f image2 [输出图像文件]
 ffmpeg -i [输入视频文件] -vframes 1 -f image2 [输出图像文件]
 ```
 
-#### 3、产看视频信息
+#### 3、查看视频信息
 ```
 ffmpeg -i [视频地址]
 ```
