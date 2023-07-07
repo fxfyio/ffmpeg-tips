@@ -40,3 +40,8 @@ ffmpeg -i [视频地址]
 ```
 信息解释对照图
 ![](./info.jpg)
+
+#### 4、提取音频
+```
+ffmpeg -i input.mp4 output.mp3
+```
