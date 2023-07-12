@@ -41,7 +41,13 @@ ffmpeg -i [视频地址]
 信息解释对照图
 ![](./info.jpg)
 
+
 #### 4、提取音频
 ```
 ffmpeg -i input.mp4 output.mp3
+```
+
+#### 5、用 ffmpeg 将视频切割为5秒的片段
+```
+ffmpeg -ss 00:00:10 -i input.mp4 -c copy -map 0 -segment_time 00:00:05 -f segment output%03d.mp4
 ```
