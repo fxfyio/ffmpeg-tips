@@ -51,3 +51,10 @@ ffmpeg -i input.mp4 output.mp3
 ```
 ffmpeg -ss 00:00:10 -i input.mp4 -c copy -map 0 -segment_time 00:00:05 -f segment output%03d.mp4
 ```
+#### 6、从ts文件中提取第一帧图片
+
+```
+ffmpeg -i input.ts -vframes 1 output.jpg
+```
+
+
